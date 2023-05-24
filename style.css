@@ -10,19 +10,37 @@ h1 {
     padding: 20px;
 }
 
-#project-cards {
+.project-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .project-card {
+    /* Styles for the project card */
     width: 300px;
+    height: 200px;
     background-color: #f2f2f2;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px; /* Add margin to create space between cards */
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.project-card:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
 }
 
 .project-card h2 {

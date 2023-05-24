@@ -1,7 +1,25 @@
-import {projects} from './data/projects';
-
 document.addEventListener("DOMContentLoaded", function () {
     const projectCards = document.getElementById("project-cards");
+
+    // Sample project data (replace with your own data)
+    const projects = [
+        {
+            title: "Project 1",
+            description: "Lorem ipsum dolor sit amet.",
+            link: "project1.html",
+        },
+        {
+            title: "Project 2",
+            description: "Consectetur adipiscing elit.",
+            link: "project2.html",
+        },
+        {
+            title: "Project 3",
+            description: "Praesent vel semper nunc.",
+            link: "project3.html",
+        },
+        // Add more projects as needed
+    ];
 
     // Create project cards
     projects.forEach(function (project) {
