@@ -1,25 +1,14 @@
+// pages
+const projects = [
+    {
+        title: "BB8's Battle",
+        description: "Potential Loading Screen",
+        link: "BB8s_Battle",
+    },
+];
+
 document.addEventListener("DOMContentLoaded", function () {
     const projectCards = document.getElementById("project-cards");
-
-    // Sample project data (replace with your own data)
-    const projects = [
-        {
-            title: "Project 1",
-            description: "Lorem ipsum dolor sit amet.",
-            link: "project1.html",
-        },
-        {
-            title: "Project 2",
-            description: "Consectetur adipiscing elit.",
-            link: "project2.html",
-        },
-        {
-            title: "Project 3",
-            description: "Praesent vel semper nunc.",
-            link: "project3.html",
-        },
-        // Add more projects as needed
-    ];
 
     // Create project cards
     projects.forEach(function (project) {
@@ -33,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         description.textContent = project.description;
 
         const link = document.createElement("a");
-        link.href = project.link;
+        link.href = `./projects/${project.link}/${project.link}.html`;
         link.textContent = "View Project";
 
         card.appendChild(title);
