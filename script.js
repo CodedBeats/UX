@@ -5,6 +5,11 @@ const projects = [
         description: "Potential Loading Screen",
         link: "BB8s_Battle",
     },
+    {
+        title: "Hexagons",
+        description: "Interesting homg page background",
+        link: "hexagons",
+    },
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
